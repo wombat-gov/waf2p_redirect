@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WAF++ is now Wombat — moved to wombat-gov.dev</title>
+  <link rel="canonical" href="https://www.wombat-gov.dev/">
+  <meta name="robots" content="noindex, nofollow">
+  <script>
+    /* Redirect every path on waf2p.dev / www.waf2p.dev to the same path on
+       the canonical Wombat domain, preserving query string and hash. */
+    (function () {
+      var path = location.pathname.replace(/\/index\.html$/, '/');
+      location.replace(
+        'https://www.wombat-gov.dev' + path + location.search + location.hash
+      );
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://www.wombat-gov.dev/">
+  </noscript>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #0a0e1a;
+      color: #f5f7fb;
+      font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 34rem; }
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #7cc4ff;
+    }
+    h1 { margin: 0 0 12px; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.15; }
+    p { margin: 0 0 16px; color: #c3cad6; }
+    a { color: #7cc4ff; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid #7cc4ff; outline-offset: 3px; border-radius: 2px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">WAF++ is now Wombat</p>
+    <h1>This site has moved.</h1>
+    <p>You are being redirected to <strong>wombat-gov.dev</strong>.</p>
+    <p>If nothing happens, <a href="https://www.wombat-gov.dev/">continue to the new site</a>.</p>
+  </main>
+</body>
+</html>
